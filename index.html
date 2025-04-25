@@ -4,50 +4,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohd Wajid | AWS DevOps Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
     }
     body {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #f4f4f4;
       padding: 20px;
     }
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      background: rgba(255,255,255,0.05);
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      animation: fadeIn 1s ease-in-out;
     }
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 5px;
+      font-size: 3rem;
+      color: #00ffe5;
+      margin-bottom: 10px;
     }
     h2 {
-      font-size: 1.5rem;
-      margin-top: 30px;
-      color: #00ffe5;
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      color: #a0e9ff;
+      border-bottom: 2px solid #00ffe5;
+      display: inline-block;
     }
     p, li {
-      font-size: 1rem;
-      line-height: 1.6;
+      font-size: 1.1rem;
+      line-height: 1.8;
     }
     ul {
-      margin-left: 20px;
+      padding-left: 20px;
     }
     a {
       color: #00ffe5;
       text-decoration: none;
+      transition: 0.3s;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     .contact a {
-      display: inline-block;
-      margin-right: 15px;
+      margin-right: 20px;
+      font-size: 1.1rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 30px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
     }
   </style>
 </head>
@@ -56,32 +81,32 @@
     <h1>Mohd Wajid</h1>
     <p><strong>AWS DevOps Engineer</strong></p>
 
-    <h2>Profile Summary</h2>
+    <h2>👨‍💻 Profile Summary</h2>
     <p>
-      A motivated AWS DevOps Engineer transitioning from 5 years of experience in non-IT roles to cloud and DevOps. Worked 3 years at Accenture as a content moderator, 1 year at Wipro in a similar role, and 1 year as a Customer Service Associate at Amazon. Passionate about cloud infrastructure, automation, and continuous integration pipelines with a growing interest in Web3 technologies.
+      AWS DevOps Engineer transitioning from 5 years in the non-IT sector. My journey includes 3 years at Accenture and 1 year at Wipro as a content moderator, followed by a year at Amazon as a Customer Service Associate. With a deep passion for automation, infrastructure as code, and emerging Web3 technologies, I'm now building robust, cloud-native solutions.
     </p>
 
-    <h2>Work Experience</h2>
+    <h2>📂 Work Experience</h2>
     <ul>
-      <li><strong>Content Moderator</strong> - Accenture (3 years)</li>
-      <li><strong>Content Moderator</strong> - Wipro (1 year)</li>
-      <li><strong>Customer Service Associate</strong> - Amazon (1 year)</li>
+      <li><strong>Content Moderator</strong> — Accenture (3 Years)</li>
+      <li><strong>Content Moderator</strong> — Wipro (1 Year)</li>
+      <li><strong>Customer Service Associate</strong> — Amazon (1 Year)</li>
     </ul>
 
-    <h2>Education</h2>
+    <h2>🎓 Education</h2>
     <p>Bachelor of Commerce (Computer Applications)</p>
 
-    <h2>Skills</h2>
+    <h2>🧠 Skills</h2>
     <ul>
-      <li>AWS Cloud Services</li>
+      <li>AWS Cloud Infrastructure</li>
       <li>Git & GitHub</li>
       <li>CI/CD Pipelines</li>
-      <li>Solidity (Basics)</li>
       <li>Linux & Shell Scripting</li>
+      <li>Solidity (Basics)</li>
       <li>Crypto Trading & Web3 Awareness</li>
     </ul>
 
-    <h2>Contact</h2>
+    <h2>📞 Contact</h2>
     <div class="contact">
       <a href="mailto:mohdwajid@example.com">Email</a>
       <a href="https://github.com/mohdwajid" target="_blank">GitHub</a>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohd Wajid | AWS DevOps Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,90 +13,154 @@
       scroll-behavior: smooth;
     }
     body {
-      font-family: 'Outfit', sans-serif;
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-      color: #f4f4f4;
-      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      color: #333;
     }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 50px;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-      animation: fadeIn 1s ease-in-out;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 0 0 20px 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #7f5af0;
+      margin-bottom: 20px;
+      object-fit: cover;
+      background: #ccc;
     }
     h1 {
       font-size: 3rem;
-      color: #00ffe5;
-      margin-bottom: 10px;
+      color: #7f5af0;
     }
     h2 {
-      font-size: 1.8rem;
-      margin-top: 40px;
-      margin-bottom: 10px;
-      color: #a0e9ff;
-      border-bottom: 2px solid #00ffe5;
-      display: inline-block;
+      font-size: 1.5rem;
+      margin: 10px 0 20px;
+      font-weight: 300;
     }
-    p, li {
-      font-size: 1.1rem;
-      line-height: 1.8;
+    p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 1rem;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #7f5af0, #6246ea);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+      box-shadow: 0 8px 20px rgba(127,90,240,0.4);
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(127,90,240,0.5);
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+      position: relative;
+    }
+    section h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 50px;
+      height: 3px;
+      background: #7f5af0;
+      border-radius: 2px;
     }
     ul {
-      padding-left: 20px;
+      list-style: none;
+      padding-left: 0;
     }
-    a {
-      color: #00ffe5;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    a:hover {
-      text-decoration: underline;
+    li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #555;
     }
     .contact a {
-      margin-right: 20px;
-      font-size: 1.1rem;
+      display: inline-block;
+      margin: 10px;
+      color: #7f5af0;
+      font-weight: 500;
+      text-decoration: none;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
     }
-    @media screen and (max-width: 768px) {
-      .container {
-        padding: 30px;
+    @media (min-width: 768px) {
+      .hero {
+        flex-direction: row;
+        text-align: left;
       }
-      h1 {
-        font-size: 2.2rem;
-      }
-      h2 {
-        font-size: 1.4rem;
+      .hero img {
+        margin-right: 40px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Mohd Wajid</h1>
-    <p><strong>AWS DevOps Engineer</strong></p>
+  <nav>
+    <div><strong>Mohd Wajid</strong></div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-    <h2>👨‍💻 Profile Summary</h2>
-    <p>
-      AWS DevOps Engineer transitioning from 5 years in the non-IT sector. My journey includes 3 years at Accenture and 1 year at Wipro as a content moderator, followed by a year at Amazon as a Customer Service Associate. With a deep passion for automation, infrastructure as code, and emerging Web3 technologies, I'm now building robust, cloud-native solutions.
-    </p>
+  <section class="hero">
+    <img src="https://via.placeholder.com/180" alt="Mohd Wajid Photo" />
+    <div>
+      <h1>Mohd Wajid</h1>
+      <h2>AWS DevOps Engineer</h2>
+      <p>Passionate about building cloud-native solutions, combining 5 years of corporate experience with cutting-edge DevOps practices and Web3 innovations.</p>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+  </section>
 
-    <h2>📂 Work Experience</h2>
-    <ul>
-      <li><strong>Content Moderator</strong> — Accenture (3 Years)</li>
-      <li><strong>Content Moderator</strong> — Wipro (1 Year)</li>
-      <li><strong>Customer Service Associate</strong> — Amazon (1 Year)</li>
-    </ul>
+  <section id="about">
+    <h3>Profile Summary</h3>
+    <p>AWS DevOps Engineer transitioning from 5 years in the non-IT sector. My journey includes 3 years at Accenture and 1 year at Wipro as a content moderator, followed by a year at Amazon as a Customer Service Associate.</p>
+  </section>
 
-    <h2>🎓 Education</h2>
-    <p>Bachelor of Commerce (Computer Applications)</p>
-
-    <h2>🧠 Skills</h2>
+  <section id="skills">
+    <h3>Skills</h3>
     <ul>
       <li>AWS Cloud Infrastructure</li>
       <li>Git & GitHub</li>
@@ -105,13 +169,20 @@
       <li>Solidity (Basics)</li>
       <li>Crypto Trading & Web3 Awareness</li>
     </ul>
+  </section>
 
-    <h2>📞 Contact</h2>
+  <section id="contact">
+    <h3>Contact</h3>
     <div class="contact">
       <a href="mailto:mohdwajid@example.com">Email</a>
       <a href="https://github.com/mohdwajid" target="_blank">GitHub</a>
       <a href="https://linkedin.com/in/mohdwajid" target="_blank">LinkedIn</a>
     </div>
-  </div>
+  </section>
+
+  <footer>
+    © 2025 Mohd Wajid. All rights reserved.
+  </footer>
 </body>
 </html>
+
